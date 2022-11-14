@@ -1,39 +1,52 @@
-.header {
-   padding: 10px 16px;
-   background-color: blue;
-   color: cornflowerblue; 
-   text-align: center; 
-   position: sticky;
+/* Generell CSS for alle sidene */
+
+body {
+    background-color: #efefef;
+    font-family: sans-serif;
+}
+
+/* CSS til Header */
+.flex-container {
+    display: flex;
+    flex-direction: row;
   }
-  .content {
-   padding: 16px;
+  
+  @media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
+
+header {
+    background-color: #efefef;
+    position: sticky;
+   }
+   
+header img { 
+max-width: 30%
 }
-.sticky {
-   position: fixed;
-   top: 0;
-   width: 100%   
+
+nav { 
+    overflow: hidden;
+    text-align: center;
+    font-size: 200%;
+    padding: 5%;
 }
-.sticky + .content {
-   padding-top: 102px;
+
+header a:link {
+    color: #414b3b;
+    padding: 10px;
+    text-decoration: none;
 }
-.topnav {
-   background-color: #333;
-   overflow: hidden;
+
+header a:visited {
+color: #414b3b;
  }
- .topnav a {
-   float: left;
-   color: #f2f2f2;
-   text-align: center;
-   padding: 14px 0px;
-   text-decoration: none;
-   font-size: 17px;
-   width: 25%;
- }
- .topnav a:hover {
-   background-color: #ddd;
-   color: black;
- }
- .topnav a.active {
-   background-color: #04AA6D;
-   color: white;
- }
+
+header a:hover, a.active {
+    background-color: #414b3b;
+    color: #efefef;
+    padding: 20px;
+  }
+
+/* CSS FOR BOOKINGSIDEN - herifra og ned*/
