@@ -1,37 +1,68 @@
-/* Generell CSS for alle sidene */
+                                        /* Generell CSS for alle sidene */
 
 body {
     background-color: #efefef;
     font-family: sans-serif;
 }
 
-/* CSS til Header */
-.flex-container {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  @media (max-width: 800px) {
-    .flex-container {
-      flex-direction: column;
-    }
-  }
-
 header {
-    background-color: #efefef;
     position: sticky;
    }
    
-header img { 
-max-width: 30%
+
+                                        /* CSS til Header */
+.nav-container {
+    display: grid;
+    padding-top: 20px;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+  }
+
+  nav ul li {
+    list-style-type: none;
+  }
+
+ .nav-items {
+    display: flex;
+    justify-content: space-evenly;
+ }
+
+.logo-image img {
+    min-width: 200px;
+    width: 100%;
 }
 
 nav { 
     overflow: hidden;
     text-align: center;
-    font-size: 200%;
+    font-size: 3rem;
     padding: 5%;
 }
+  
+                                           /* CSS Header -- Media */
+  @media only screen and (max-width: 786px) {
+    .nav-container {
+      grid-template-columns: 1fr;
+    }
+    .nav-items {
+        flex-direction: column; 
+    }
+    .nav-items li {
+        margin: 50px 0;
+        text-align: center;
+    }
+    
+  }
+
+@media only screen and (max-width: 1168px) {
+    nav {
+        font-size: 2rem;
+    }
+}
+
+
+
+                                                /* HEADER HOVER*/
 
 header a:link {
     color: #414b3b;
@@ -43,10 +74,17 @@ header a:visited {
 color: #414b3b;
  }
 
-header a:hover, a.active {
+header li a:hover, a.active {
     background-color: #414b3b;
     color: #efefef;
-    padding: 20px;
   }
 
-/* CSS FOR BOOKINGSIDEN - herifra og ned*/
+
+                                                 /* CONTENT*/
+
+.content {
+    min-height: 100vh;
+}
+
+                                                /* CSS FOR BOOKINGSIDEN - herifra og ned*/
+
