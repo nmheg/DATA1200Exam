@@ -210,31 +210,38 @@ a.active {
   justify-content: center;
   align-items: center;
   color: #ffff;
-  padding-bottom: 20px;
+  
 }
-
+.titleBooking{
+  margin-left: 20px;
+  margin-right: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-align: center;
+  color:#efefef;
+  border: 5px solid #efefef;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
 .bilderamme{
   display: grid;
   grid-template-columns: 500px, 500px;
   background: #414b3b;
 }
 
-.bilde-img img {
-  display: grid;
-  background-image: url(https://images.unsplash.com/photo-1599458252573-56ae36120de1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
-  grid-template-columns: 500px,500px;
-}
 
 .bilderamme-innhold {
   background: #efefef;
-  opacity: 0,8;
-  padding: 60px;  
+  padding: 30px;  
 }
 
 .bilderamme-innhold h3 {
   display: block;
   background: #efefef;
   text-size-adjust: 20;
+  text-align: center;
   color: #414b3b;
   padding-bottom: 10px;
 }
@@ -526,7 +533,14 @@ color: white
   }
   .sticky-text {
     font-size: 20px;
-    
+    }
+   .bilderamme-innhold {
+    padding: 10px;
+    font-size: smaller;  
+  }
+  form select, form input {
+   font-size: 15px;
+  font-display: bold;
   }
 }
 
@@ -546,7 +560,14 @@ color: white
   }
   .sticky-text {
     font-size: 15px;
-   
+   }
+   .bilderamme-innhold {
+    padding: 10px;
+    font-size: smaller;  
+  }
+  form select, form input {
+   font-size: 15px;
+  font-display: bold;
   }
 }
 
@@ -570,7 +591,13 @@ color: white
   }
   .sticky-text {
     font-size: 10px;
-    
+    }
+  .bilderamme-innhold {
+    padding: 10px;
+    font-size: smaller;  
   }
-  
+  form select, form input {
+   font-size: 10px;
+  font-display: bold;
+  }
 }
